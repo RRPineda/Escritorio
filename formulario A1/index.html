@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <div class="container">
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre" placeholder="Escribe tu Nombre">
+        <br><br>
+
+        <label for="Apellidos">Apellidos</label>
+        <input type="text" id="Apellidos" placeholder="1er Apellido">
+        <br><br>
+
+        <label for="Email">Email</label>
+        <input type="email" id="Email" placeholder="email">
+        <br><br>
+
+        <label for="Asunto">Asunto</label>
+        <input type="text" id="Asunto" placeholder="Titular de la consulta">
+        <br><br>
+
+        <label for="Mensaje">Mensaje</label>
+        <textarea id="Mensaje" cols="50" rows="5" placeholder="Describe brevemente en menos de 300 caracteres"></textarea>
+        <br><br>
+
+        <button onclick="enviarDatos()">Enviar Datos</button>
+    </div>
+
+    <br><br>
+
+    <table border="1" width="60%" style="margin-left: auto; margin-right: auto;">
+        <thead>
+            <tr>
+                <th width="20%">Nombre</th>
+                <th width="20%">Apellidos</th>
+                <th width="30%">Email</th>
+                <th width="15%">Asunto</th>
+                <th width="35%">Mensaje</th>
+            </tr>
+        </thead>
+        <tbody id="tablaPersonas"></tbody>
+    </table>
+
+    <script src="js/app.JS"></script>
+
+</body>
+</html>

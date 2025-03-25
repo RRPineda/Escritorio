@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Inventario</title>
+    <script src="JS/app.js" defer></script>
+</head>
+<body>
+ <tr>
+    <table border="1px" width="45%" style="background-color: rgb(93, 112, 165);">
+        <tr>
+            <th><h2><i>GESTION DE INVENTARIO</i></h2></th>
+        </tr>
+    </table>
+    <div>
+        <h3>Agregar Producto</h3>
+        <label for="Codigo">Código:</label>
+        <input type="text" id="Codigo" placeholder="Código">
+        <br><br>
+        <label for="articulo">Artículo:</label>
+        <input type="text" id="articulo" placeholder="Nombre del artículo">
+        <br><br>
+        <label for="Cantidad">Cantidad:</label>
+        <input type="number" id="Cantidad" placeholder="Cantidad">
+        <br><br>
+        <label for="Precio">Precio:</label>
+        <input type="number" id="Precio" placeholder="Precio">
+        <br><br>
+        <button onclick="agregarproducto()">Agregar Producto</button>
+    </div>
+<br><br><br>
+    <div>
+        <table border="1px" width="100%" style="background-color: rgb(93, 112, 165);">
+            <tr>
+                <th><h2><i>INVENTARIO</i></h2></th>
+            </tr>
+        <table border="1px" width="100%" style="background-color: rgb(127, 157, 214);">
+            <thead>
+                <tr>
+                    <th><h3><i> Código</i></h3></th>
+                    <th><h3><i>Artículo</i></h3> </th>
+                    <th><h3><i>Cantidad</i></h3></th>
+                    <th><h3><i>Precio</h3></i></th>
+                    <th><h3><i>Total</i></h3></th>
+                    <th><h3><i>Stock</i></h3></th>
+                    <th><h3><i>Eliminar</h3></i></th>
+                </tr>
+            </thead>
+            <tbody id="lista-productos"></tbody>
+        </table>
+    </div>
+    <br><br><br>
+    <div>
+        <table border="1px" width="100%" style="background-color: rgb(93, 112, 165);">
+            <tr>
+                <th><h2><i>VENTAS</i></h2></th>
+            </tr>
+        <table border="1px" width="100%" style="background-color: rgb(127, 157, 214);">
+            <thead>
+                <tr>
+                    <th><h3><i> Código</i></h3></th>
+                    <th><h3><i>Artículo</i></h3> </th>
+                    <th><h3><i>Cantidad</i></h3></th>
+                    <th><h3><i>Precio</h3></i></th>
+                    <th><h3><i>Total</i></h3></th>
+                    <th><h3><i>Fecha</i></h3></th>
+                    <th><h3><i>Eliminar</h3></i></th>
+                </tr>
+            </thead>
+            <tbody id="lista-ventas"></tbody>
+        </table>
+    </div>
+    <br><br><br>
+    <div>
+        <table border="1px" width="100%" style="background-color: rgb(93, 112, 165);">
+            <tr>
+                <th><h2><i>COMPRAS</i></h2></th>
+            </tr>
+        <table border="1px" width="100%" style="background-color: rgb(127, 157, 214);">
+            <thead>
+                <tr>
+                    <th><h3><i> Código</i></h3></th>
+                    <th><h3><i>Artículo</i></h3> </th>
+                    <th><h3><i>Cantidad</i></h3></th>
+                    <th><h3><i>Precio</h3></i></th>
+                    <th><h3><i>Total</i></h3></th>
+                    <th><h3><i>Fecha</i></h3></th>
+                    <th><h3><i>Eliminar</h3></i></th>
+                </tr>
+            </thead>
+            <tbody id="lista-compras"></tbody>
+        </table>
+    </div>
+ <script src="JS/app.js"></script>
+</body>
+</html>

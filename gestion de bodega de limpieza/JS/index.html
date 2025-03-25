@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Lista de Productos y Precios Actuales</h2>
+    <table border="1px" width="30%" style="margin-left: auto; margin-right: auto;">
+        <tr>
+            <th>Producto</th>
+            <th>Precio (Lps)</th>
+        </tr>
+        <tr>
+            <td>Detergente en polvo (454 g)</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Detergente en líquido (454 g)</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Escobas</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>Trapeadores</td>
+            
+            <td>200</td></tr>
+        <tr>
+            <td>Cepillos</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Desinfectante (galón)</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Jabón de manos (litro)</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Jabón en barra</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Pastillas de baño</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <h2 style="text-align: center;">Registro de Compra</h2>
+    <table border="1px" width="50%" style="margin-left: auto; margin-right: auto;">
+        <tr>
+            <td><label for="encargado">Nombre del encargado:</label></td>
+            <td><input type="text" id="encargado" placeholder="Ingrese su Nombre"></td>
+        </tr>
+        <tr>
+            <td><label for="empleado">Nombre del empleado:</label></td>
+            <td><input type="text" id="empleado" placeholder="Ingrese el Nombre"></td>
+        </tr>
+        <tr>
+            <td><label for="fecha">Fecha de entrega:</label></td>
+            <td><input type="date" id="fecha"></td>
+        </tr>
+        <tr>
+            <td><label for="producto">Producto:</label></td>
+            <td>
+                <select id="producto">
+                    <option value="detergente">Detergente en polvo</option>
+                    <option value="detergente_liquido">Detergente en líquido</option>
+                    <option value="escoba">Escoba</option>
+                    <option value="trapeador">Trapeador</option>
+                    <option value="cepillo">Cepillo</option>
+                    <option value="desinfectante">Desinfectante (galón)</option>
+                    <option value="jabon_mano">Jabón de manos (litro)</option>
+                    <option value="jabon">Jabón en barra</option>
+                    <option value="pastillas">Pastillas de baño</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="cantidad">Cantidad:</label></td>
+            <td><input type="number" id="cantidad"  value=""></td>
+        </tr>
+        <tr>
+            <td><label for="total">Total:</label></td>
+            <td><input type="text" id="total" ></td>
+        </tr>
+        <tr>
+            <td><button onclick="calcular()">Calcular Total</button></td>
+            <td> <input type="radio" name="producto" id="producto1" value="producto">
+                <label for="producto">Producto entregado</label></td>
+            
+        </tr>
+        <tr>
+            <td><button onclick="limpiarCampos()">Limpiar</button></td>
+            <td><button onclick="guardar()">Guardar Producto </button></td>    
+        </tr>
+    </table>
+
+    <h2 style="text-align: center;">Registro de Ventas</h2>
+    <table border="1px" width="60%" style="margin-left: auto; margin-right: auto;">
+        <thead>
+            <tr>
+                <th>Encargado</th>
+                <th>Empleado</th>
+                <th>Fecha</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="tablaVenta"></tbody>
+    </table>
+
+    <script src="JS/app.js"></script>
+</body>
+</html>
