@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Juguetería Rosi - Formulario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Juguetería Rosi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactos.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="formulario.html">Formulario</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <h2 class="text-center mb-4">Formulario de Registro y Pedido</h2>
+    <form >
+      <div class="col-md-4 mb-4" >
+        <label for="nombre" class="form-label" >Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ej. Ana López" required >
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" placeholder="nombre@gmail.com" required>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" placeholder="Ej. 9876-5432" required>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <label for="direccion" class="form-label">Dirección de envío</label>
+        <textarea class="form-control" id="direccion" rows="2" placeholder="Colonia Los Ángeles, Tegucigalpa" required></textarea>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <label for="producto" class="form-label">Producto deseado</label>
+        <select class="form-select" id="producto" required>
+          <option value="">Selecciona un producto</option>
+          <option value="muñeca">Muñeca Sonrisas</option>
+          <option value="carro">Carro Rápido X</option>
+          <option value="pelota">Pelota Mágica</option>
+          <option value="robot">Robot Max</option>
+          <option value="bloques">Bloques Creativos</option>
+        </select>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <label for="cantidad" class="form-label">Cantidad</label>
+        <input type="number" class="form-control" id="cantidad" min="1" value="1" required>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <label for="contraseña" class="form-label">Crear una contraseña</label>
+        <input type="password" class="form-control" id="contraseña" required>
+        <div class="form-text">Debe tener entre 8 y 20 caracteres, sin símbolos especiales.</div>
+      </div>
+
+      <button type="submit" class="btn btn-success">Enviar pedido</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
